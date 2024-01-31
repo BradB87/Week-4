@@ -1,12 +1,12 @@
 const output = document.querySelector('body p:nth-of-type(2)');
 		
 /* STEP 1a: A simple if/else statement */
-let homeWorkDone = false;
-if(homeWorkDone){
-	console.log("my homework is done!");
-}else{
-	console.log("my homework is not done!");
-}
+// let homeWorkDone = false;
+// if(homeWorkDone){
+	// console.log("my homework is done!");
+// }else{
+	// console.log("my homework is not done!");
+// }
 // STEP 1b: Any value that is not false, undefined, null, 0, NaN, or an empty string will evaluate to TRUE when tested using a conditional statement - try a few other values for var homeWorkDone and test
 
 /* STEP 2: The more complex if|elseif|else */
@@ -24,8 +24,12 @@ function setWeather() {
 	console.log("set weather called!!");
 	let choice = select.value;
 	let temperature = temp.value;
+	//console.log(`weather is ${choice} and temperature is ${temperature}.`);
 	/* STEP 2b: Craft an IF/ELSEIF/ELSE that changes the src attribute of the icon element to the appropriate .svg file in the images folder */
-
+	if(choice === "sunny") {
+		// change weather icon
+		icon.setAttribute("scr","images/sunny.svg");
+	}
 	/* STEP 3: Add a nested IF/ELSE statement inside the 'sunny' condition above that tests for temperature, and if it is equal to or greater than 15, turn the page background orange, otherwise turn it lightblue */
 
 	/* STEP 4: Logical operators - and, or, not (delete multi-line comment delimiters below) */
