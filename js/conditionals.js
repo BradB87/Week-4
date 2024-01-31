@@ -28,7 +28,22 @@ function setWeather() {
 	/* STEP 2b: Craft an IF/ELSEIF/ELSE that changes the src attribute of the icon element to the appropriate .svg file in the images folder */
 	if(choice === "sunny") {
 		// change weather icon
-		icon.setAttribute("scr","images/sunny.svg");
+		icon.setAttribute("src","images/sunny.svg");
+		// change color of screen based on temperature
+		if(temperature >= 15){
+			page.style.backgroundColor ="orange";
+		}else{
+			page.style.backgroundColor= "lightblue";
+		}
+	}else if(choice === "rainy"){
+		// change weather icon
+		icon.setAttribute("src","images/rainy.svg");
+	}else if(choice == "windy"){
+		// change weather icon
+		icon.setAttribute("src","images/windy.svg");
+	}else{
+		// No weather icon
+		icon.setAttribute("src", "images/cloud-off.svg");
 	}
 	/* STEP 3: Add a nested IF/ELSE statement inside the 'sunny' condition above that tests for temperature, and if it is equal to or greater than 15, turn the page background orange, otherwise turn it lightblue */
 
