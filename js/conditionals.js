@@ -49,23 +49,23 @@ function setWeather() {
 
 	/* STEP 4: Logical operators - and, or, not (delete multi-line comment delimiters below) */
 	// STEP 4a: AND - && (It's sunny AND it's at least 15deg)
-/*
-	if () {
+
+	if (choice === "sunny" && temperature >= 15) {
 		comments.textContent = 'It is sunny and warm — time to find your sunglasses!';
 	// STEP 4b: AND, once again - && (It's sunny AND it's less than 15deg)
-	} else if () {
+	} else if ( choice === "sunny" && temperature < 15) {
 		comments.textContent = 'It is sunny out there, but it is a bit cool.';
 	// STEP 4c: OR - || (It's windy OR rainy)
-	} else if () {
+	} else if (choice === "windy"|| choice == "rainy") {
 		comments.textContent = 'The weather today is a bit unsettled.';
 	} else {
 		comments.textContent = 'You did not specify the type of weather, today.';
 	}
 	// STEP 4d: NOT - ! (It's NOT rainy)
-	if () {
-		comments.textContent += ' No sign of rain.';
+	if ( choice !== "rainy" && choice !== "windy") {
+		comments.textContent += ' No sign of rain or wind';
 	}
-*/
+
 	// Weather icons by Cole Bemis - https://feathericons.com/, MIT, https://commons.wikimedia.org/w/index.php?curid=60153354
 
 } // End of setWeather() function
